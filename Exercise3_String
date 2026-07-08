@@ -1,0 +1,12 @@
+public class Main {
+    
+    public static void main(String [] args){
+        
+        //Declara un String que contenga tu nombre, después muestra un mensaje de bienvenida por consola.
+        
+        String nombre = "Amaia";
+        
+        System.out.println("Bienvenido/a: " + nombre);
+        
+    }
+}
