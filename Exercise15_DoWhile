@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class Main {
+    
+    public static void main (String[] arg){
+        
+        //Lee un número por teclado y comprueba que este numero es mayor o igual que cero, si no lo es lo volverá a pedir (do while), después muestra ese número por consola.
+        
+        System.out.println("Introduce un número: ");
+        
+        int numteclado = 0;
+        
+            do {
+              
+                Scanner teclado = new Scanner(System.in);
+        
+                numteclado = teclado.nextInt();
+        
+                if (numteclado >= 0) {
+            
+                System.out.println("El número " + numteclado + " es mayor o igual que 0.");
+            
+                } else {
+            
+                System.out.println("El número " + numteclado + " es menor que 0. Por favor, introduce otro número: ");
+                
+                }
+            
+            } while (numteclado < 0);
+            
+            
+        }
+        
+    }
