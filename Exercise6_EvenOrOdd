@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Main{
+    
+    public static void main(String[] args){
+        
+        //Introduce un número y comprueba si es par o impar.
+        
+        Scanner textousuario = new Scanner(System.in);
+        
+        System.out.println("Introduce tu nombre: ");
+        
+        String nombre = textousuario.nextLine();
+        
+        System.out.println("Bienvenido/a " + nombre + ". Por favor, introduce un número para verificar si es par o impar: ");
+        
+        int num = textousuario.nextInt();
+        
+        int resto = num % 2;
+        
+        if(resto == 0) {
+            
+            System.out.println("El número " + num + " es par.");   
+            
+        }else{
+            
+            System.out.println("El número " + num + " es impar.");
+            
+        }
+    }
+}
