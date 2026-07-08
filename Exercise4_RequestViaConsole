@@ -1,0 +1,18 @@
+import java.util.Scanner; //Importamos la librería
+public class Main{
+    
+    public static void main(String[] args){
+        
+        //Pedir nombre por consola.
+        
+        Scanner textousuario = new Scanner(System.in);
+              
+        System.out.println("Introduce tu nombre: ");
+        
+        String nombre=textousuario.nextLine();
+        
+        System.out.println("Bienvenido/a "+ nombre);  
+        
+    }  
+    
+}
