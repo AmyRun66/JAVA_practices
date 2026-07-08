@@ -1,0 +1,74 @@
+import java.util.Scanner;
+
+public class Main {
+    
+    public static void main (String[] args){
+        
+        //Realiza una aplicación que nos calcule una ecuación de segundo grado. Debes pedir las variables a, b y c por teclado y comprobar antes que el discriminante (operación en la raíz cuadrada). Para la raíz cuadrada usa el método sqlrt de Math.
+        
+        int numa = 0;
+        int numb = 0;
+        int numc = 0;
+        
+        //PEDIMOS NÚMEROS a, b y c
+        for (int i = 1; i <= 3; i++) { //Ponemos 3, dado que solamente necesitamos 3 valores numa, numb y numc.             
+                
+            System.out.println("Introduce el " + i + "º número:");
+            
+            Scanner teclado = new Scanner(System.in);
+        
+            int num = teclado.nextInt();
+            
+            if (i==1){
+                
+                numa = num;
+                
+            } else if (i==2) {
+                
+                numb = num;
+            } else {
+                
+                numc = num;
+            }
+            
+            
+        }     
+        
+        System.out.println("A = " + numa + "; B = " + numb + "; C = " + numc);
+        
+        //ECUACIÓN:
+        
+        //Denominador
+        
+        int denominador = 2 * numa;             
+                
+        //Raíz cuadrada (discriminante)
+        int raiz1 = numb * numb;
+        
+        int raiz2 = 4 * numa * numc;
+        
+        int raiz3 = raiz1 - raiz2;
+        
+        if (raiz3 < 0) {
+            
+            System.out.println("La ecuación no tiene soluciones reales."); //Resultado negativo de la raíz cuadrada.
+            
+        } else { //Si el resultado de la raí cuadrada es positivo.
+          
+        double raiz = Math.sqrt(raiz3);
+        
+        //Opción numerador +
+        
+        double opcionposx = (-numb + raiz) / denominador;
+        
+        //Opción numerador -
+        
+        double opcionnegx = (-numb - raiz) / denominador;
+        
+        System.out.println("El resultado + de la ecuación es: " + opcionposx + " y el -: " + opcionnegx + ".");
+            
+        }
+                
+    }
+    
+}
