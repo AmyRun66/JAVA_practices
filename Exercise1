@@ -1,0 +1,40 @@
+public class Main {
+    
+    public static void main(String[] args){
+        
+        //Declara variables numéricas, muestra por consola la suma, resta, multiplicación, división y módulo (resto de la división).
+        
+        int num1 = 4;
+        
+        int num2 = 6;
+        
+        double num3 = 5;
+        
+        double num4 = 9;
+        
+        int num5 = 10;
+        
+        int num6 = 3;
+        
+        
+        
+        int resultadoSuma = num1 + num2;
+        
+        int resultadoResta = num1 - num2;
+        
+        int resultadoMulti = num1 * num2;
+        
+        double resultadoDivi = num3 / num4; //ponemos double, para que salga el resultado real y no 0
+        
+        int resultadoMod = num5 % num6;
+        
+        System.out.println("EJERCICIO 1:");
+        System.out.println("--------------");
+        System.out.println("El resultado de la suma de " + num1 + " y " + num2 + " es: " + resultadoSuma);
+        System.out.println("El resultado de la resta de " + num1 + " y " + num2 + " es: " + resultadoResta);
+        System.out.println("El resultado de la multiplicación de " + num1 + " y " + num2 + " es: " + resultadoMulti);
+        System.out.println("El resultado de la división de " + num3 + " y " + num4 + " es: " + resultadoDivi);
+        System.out.println("El resto de la división de " + num5 + " y " + num6 + " es: " + resultadoMod);
+                
+    }
+}
