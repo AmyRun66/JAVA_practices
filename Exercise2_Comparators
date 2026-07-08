@@ -1,0 +1,30 @@
+public class Main {
+    
+    public static void main(String[] args){
+        
+        //Declara variables numéricas, he indica cual es mayor de los dos. Si son iguales indicarlo también.
+        
+        int num1 = 3;
+        
+        int num2 = 2;
+              
+        System.out.println("EJERCICIO 2:");
+        System.out.println("--------------");
+        System.out.println("Vamos a comparar " + num1 + " con " + num2 + " :");
+        
+        if (num1 >= num2) {
+            
+            if(num1 > num2){
+                
+                System.out.println(num1 + " es mayor que " + num2);
+            } else {
+                
+                System.out.println(num1 + " es igual que " + num2);
+            }
+        }else{
+            
+            System.out.println(num1 + " es menor que " + num2);
+        }              
+            
+    }
+}
