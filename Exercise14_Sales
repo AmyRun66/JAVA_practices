@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class Main {
+    
+    public static void main(String[] args){
+        
+        //Realiza una aplicación que nos pida un número de artículos a introducir, después nos pedirá tantos tipos de artículos junto con sus precios por teclado como número de artículos se hayan indicado. Al final mostrará el precio total.
+        
+        System.out.println("Introduce un número de ventas: ");
+        
+        Scanner teclado = new Scanner(System.in);
+        
+        int ventas = teclado.nextInt();
+        
+        int preciototal = 0;
+        
+        for (int i = 1; i <= ventas; i++) {
+            
+            System.out.println("Venta nº" + i + " introdúcela: ");
+            
+            Scanner tecladoventa = new Scanner(System.in);
+            
+            String tipodeventa = tecladoventa.nextLine();
+            
+            System.out.println("Ahora, introduce su precio: ");
+            
+            Scanner tecladoprecio = new Scanner(System.in);
+            
+            int precioart = tecladoventa.nextInt();
+            
+            preciototal = preciototal + precioart;  
+               
+        }
+        
+        System.out.println("Has adquirido " + ventas + " artículos y el precio total es de " + preciototal + ".");
+        
+        } 
+       
+    }
