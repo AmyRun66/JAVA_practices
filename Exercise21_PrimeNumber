@@ -10,7 +10,7 @@ public class Main {
         
         int num = teclado.nextInt();
         
-        int contador = 0; //Número de divisibles (por cuántos números se puede dividir.
+        int contador = 0; //Número de divisibles (por cuántos números se puede dividir).
               
         if (num <= 1){
             
