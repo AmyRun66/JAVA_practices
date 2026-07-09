@@ -1,0 +1,78 @@
+import java.util.Scanner;
+
+public class Main {
+    
+    public static void main(String[] args) {
+        
+        //Pide que el usuario que escriba algo, y muestra el número de carácteres y el tipo de lo que ha introducido.
+        
+        System.out.println("Introduce lo que quieras y contaremos los elementos que lo componen: ");
+        
+        Scanner teclado = new Scanner(System.in);
+        
+        String intro = teclado.nextLine();
+        
+        
+        //CONTADORES:
+        
+        int contador = 0; //Contador del total de elementos que componen intro de forma general.
+        
+        int c = 0; //Contador de la posición de los elemnetos del string.
+        
+        int contletras = 0;
+        
+        int contnum = 0;
+        
+        int contotros = 0; //Contador de carácteres que no son ni letras, ni números.
+        
+        for (int i = 0; i < intro.length(); i++) {
+            
+            intro.charAt(c);
+            
+            char elemento = intro.charAt(c);
+            
+                if (Character.isLetter(elemento)) {
+                
+                contletras++;
+                
+                } else if (Character.isDigit(elemento)) {
+                
+                contnum++;
+                
+                } else {
+                
+                contotros++;
+                }
+            
+            contador++;
+            
+            c++;
+            
+        }
+        
+        if (contador > 1) {
+            
+            System.out.println(intro + " consta de " + contador + " elementos: ");
+            System.out.println(contletras + " " + (contletras == 1 ? "letra" : "letras"));
+            System.out.println(contnum + " " + (contnum == 1 ? "número" : "números" ));
+            System.out.println(contotros + " " + (contotros == 1 ? "carácter especial" : "carácteres especiales."));
+
+        } else {
+            
+            if (contletras > 0) {
+                
+                System.out.println(intro + " consta de " + contador + " letra.");
+                
+            } else if (contnum > 0) {
+                
+                System.out.println(intro + " consta de " + contador + " número.");
+                
+            } else {
+                
+                System.out.println(intro + " consta de " + contador + " carácter especial.");
+                
+            }
+            
+        }
+    }
+}
