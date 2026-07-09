@@ -1,0 +1,38 @@
+public class Main {
+    
+    public static void main(String[] args){
+        
+        //Muestra los números primos entre 1 y 25.
+             
+        int primo = 0; 
+        
+        for (int i = 25; i >= 2; i--){ //Va a repetir la acción con un contador cuenta atrás hasta 1.
+            
+            int contador = 0; //Número de divisibles (por cuántos números se puede dividir).
+                       
+            int raiz = (int)Math.sqrt(i); //Poniendo int entre paréntesis, obligamos a que la raíz cuadrada dé un resultado de número entero; sin decimales.
+            
+                for(int j = raiz; j > 1; j--){ 
+                
+                if(i % j == 0){ //Se va asegurar de que el resto de la división entre i y j sea 0.
+                    
+                        contador++;
+                    
+                }
+        
+                }
+                   
+                if (contador < 1){
+            
+                System.out.println(i);
+            
+                } else {
+            
+                continue;
+            
+                }
+           
+        }
+        
+    }
+}
