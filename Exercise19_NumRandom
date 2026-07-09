@@ -1,0 +1,45 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class Main {
+    
+    public static void main(String[] args) {
+        
+        //Pide por teclado dos número y genera 10 números aleatorios entre esos números. 
+        
+        System.out.println("Vamos a generar 10 números, que estén entre dos que tú decidas.");
+        
+        System.out.println("Introduce el 1º número: ");
+        
+        Scanner teclado = new Scanner(System.in);
+        
+        int numuser1 = teclado.nextInt();
+        
+        System.out.println("Introduce el 2º número: ");
+        
+        int numuser2 = teclado.nextInt();
+              
+        System.out.println("Los números introducidos son 1º: " + numuser1 + "; 2º: " +numuser2 + " .");
+        
+        Random random = new Random();
+        
+        for (int i = 1; i <= 10; i++) {
+            
+            if (numuser1 > numuser2){
+                
+                int numrandom = random.nextInt(numuser1 - numuser2 + 1) + numuser2; //ponemos "+ numuser2" para que no parta de 0 y lo haga del nº menor que elija el usuario.
+                
+                System.out.println(numrandom);
+                
+            } else {
+                
+                int numrandom = random.nextInt(numuser2 - numuser1 + 1) + numuser1;
+                
+                System.out.println(numrandom);
+            }
+                   
+            
+        }
+        
+    }
+}
