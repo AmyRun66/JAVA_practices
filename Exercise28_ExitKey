@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class Main {
+    
+    public static void main(String[] args){
+        
+        //Crear una aplicación que nos permite insertar números hasta que insertemos un -1. Calcular el numero de intentos.
+        
+        System.out.println("Introduce un número: ");
+        
+        Scanner teclado = new Scanner(System.in);
+        
+        int num = teclado.nextInt();
+        
+        int contador = 1;
+              
+        if (num == -1){
+            
+            System.out.println("Has desbloqueado la clave de salida: " + num + " en el primer intento.");
+            
+        } else {
+            
+            do {
+            
+            System.out.println("Introduce otro número: ");
+        
+            num = teclado.nextInt();
+            
+            contador++;
+        
+        } while (num != -1);
+        
+        System.out.println("Has desbloqueado la clave de salida: " + num + " en el " + contador + "º intento.");
+            
+        }
+        
+    }
+    
+}
