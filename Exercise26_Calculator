@@ -1,0 +1,70 @@
+import java.util.Scanner;
+
+public class Main{
+    
+    public static void main(String[] args){
+        
+        //Crea una calculadora, nos pedirá 2 números y un signo aritmético, se realizara la operación. Al final mostrara el resultado el resultado.
+        
+        Scanner teclado = new Scanner(System.in);
+        
+        System.out.println("Introduce un número: ");
+        
+        int num1 = teclado.nextInt();
+        
+        System.out.println("Introduce otro número: ");
+        
+        int num2 = teclado.nextInt();
+        
+        teclado.nextLine();
+        
+        System.out.println("Introduce un operador matemático: ");
+        
+        String operador = teclado.nextLine();
+        
+        
+        //Salida del programa
+        boolean exit = false;
+        
+        
+        //OPERACIÓN:
+        
+        int resultado = 0;
+        
+        
+        
+        switch(operador){
+            
+            case "+":
+                
+                resultado = num1 + num2;
+                break;
+            
+                
+            case "-":
+                
+                resultado = num1 - num2;
+                break;
+                
+            case "*":
+                
+                resultado = num1 * num2;
+                break;
+                
+            case "/":
+                
+                resultado = num1 / num2;
+                break;
+                
+            case "%":
+                
+                resultado = num1 % num2;
+                break;
+                
+        }
+        
+        System.out.println("La operación " + num1 + " " + operador + " " + num2 + " da como resultado: " + resultado);
+        
+    }
+    
+}
