@@ -1,0 +1,13 @@
+public class Main {
+    
+    public static void main(String[] args){
+        
+        //Del siguiente String «¿Has pillado la Villavesa?» reemplaza las "a"-s por "u"-s.
+        
+        String texto = "¿Has pillado la Villavesa?";
+        
+        System.out.println(texto.replace('a', 'u'));
+        
+    }
+    
+}
