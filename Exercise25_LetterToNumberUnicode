@@ -1,0 +1,17 @@
+public class Main{
+    
+    public static void main(String[] args) {
+        
+        //Recorre el String y transforma cada carácter a su equivalente numérico de UNICODE. Muestralos en linea recta, separados por un espacio entre cada carácter.
+        
+        String texto = "¿Has pillado la Villavesa?";
+        
+        for(int i = 0; i < texto.length();i++){
+            
+            System.out.print((int)texto.charAt(i) + " ");
+            
+        }
+        
+    }
+    
+}
