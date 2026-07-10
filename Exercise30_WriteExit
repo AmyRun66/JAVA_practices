@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class Main{
+    
+    public static void main(String[] args) {
+        
+        //Pedir al usuario que nos escriba frases de forma infinita hasta que inserte una cadena vacia.
+        
+        System.out.println("Introduzca una frase (si introduce una cadena vacía, saldrá): ");
+        
+        Scanner teclado = new Scanner(System.in);
+        
+        String frase = teclado.nextLine();
+        
+        if (frase == ""){
+            
+            System.out.println("Salida detectada.");
+            
+        } else {
+            
+            while (frase != ""){
+                
+                System.out.println("Introduzca otra frase: ");
+               
+                frase = teclado.nextLine();
+                
+            }
+            
+        }
+
+        System.out.println("Exit.");
+    }     
+    
+}
