@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Main{
+    
+    public static void main(String[] args){
+
+    //Introduce una frase y elimina los espacios en blanco.
+        
+    System.out.println("Inserta una frase: ");    
+        
+    Scanner teclado = new Scanner(System.in);
+    
+    String texto = teclado.nextLine();
+    
+    char caracteractual;
+    
+    for (int i = 0; i < texto.length(); i++){
+        
+        caracteractual = texto.charAt(i);
+        
+        if(caracteractual == ' ') {
+            
+            texto = texto.replace(" ", "");
+            
+        }   
+        
+    }
+    
+    System.out.println(texto);
+        
+    }
+    
+}
