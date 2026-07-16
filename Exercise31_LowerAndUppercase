@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class Main{
+    
+    public static void main(String[] args){
+        
+        //Convertir una frase a mayúsculas o minúsculas, que daremos opción a que el usuario lo pida y mostraremos el resultado por pantalla.
+              
+        System.out.println("Introduce una frase: ");
+        
+        Scanner teclado = new Scanner(System.in);
+        
+        String textuser = teclado.nextLine();
+        
+        System.out.println("¿Quiéres convertirla a mayúsculas o mínusculas?");
+        System.out.println("------------------------------------------------------");
+        System.out.println("OPCIONES:");
+        System.out.println("---------");
+        System.out.println("1) Minúsculas");
+        System.out.println("2) MAYÚSCULAS");
+        
+        int optionuser = teclado.nextInt();
+        
+        System.out.println("Has elegido la opción " + optionuser);
+        
+        if(optionuser == 1){
+            
+            System.out.println(textuser.toLowerCase());
+            
+        } else if (optionuser == 2){
+            
+            System.out.println(textuser.toUpperCase());
+            
+        } else {
+            
+            System.out.println("Esta opción, no existe.");
+            
+        }
+        
+    }
+}
