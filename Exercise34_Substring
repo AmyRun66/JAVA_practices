@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+    
+    public static void main(String[] args){
+        
+        //Introducir una cadena, extraer la cuarta y quinta letra usando el método substring.
+        
+        System.out.println("Introduce una palabra: ");
+        
+        Scanner teclado = new Scanner(System.in);
+        
+        String usertext = teclado.nextLine();
+        
+        System.out.println("La 4º letra es: " + usertext.substring(3,4) + " ; y la quinta: " + usertext.substring(4,5));
+                
+        }
+        
+    }
