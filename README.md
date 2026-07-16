@@ -1,2 +1,2 @@
-# JAVA practices
+# JAVA practice
 Basic exercises for learning
