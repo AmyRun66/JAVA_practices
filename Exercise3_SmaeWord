@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Main{
+    
+    public static void main(String[] args){
+        
+        //Pedir dos palabras por teclado, indicar si son iguales.
+        
+        System.out.println("Introduce una palabra: ");
+        
+        Scanner teclado = new Scanner(System.in);
+        
+        String textuser = teclado.nextLine();
+        
+        System.out.println("Introduce otra palabra: ");
+      
+        String textuser2 = teclado.nextLine();
+        
+        if (textuser.equals(textuser2)){
+            
+            System.out.println("Las palabras son idénticas.");
+            
+        } else {
+            
+            System.out.println("Las palabras no son idénticas.");
+            
+        }
+        
+    }
+    
+    
+    
+}
